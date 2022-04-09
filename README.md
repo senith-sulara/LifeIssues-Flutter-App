@@ -45,4 +45,5 @@ Procedure of setting up prerequisites and run the project:
 13.	Log in to the Admin panel using below credentials.
 
 Email: admin@lifes.com
+
 Password: admin123
