@@ -43,5 +43,6 @@ Procedure of setting up prerequisites and run the project:
 10.	Open Android or IOS emulator
 11. Run With out debuging / start debuging  
 13.	Log in to the Admin panel using below credentials.
+
 Email: admin@lifes.com
 Password: admin123
