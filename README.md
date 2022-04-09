@@ -1,7 +1,7 @@
 
 # Group-ID:  2022_REG_37
 -----------------------------------------------------------------
-# LifeIssues Flutter Mobile App
+# Life Issues Flutter Mobile App
 -----------------------------------------------------------------
 # Group Details
    
