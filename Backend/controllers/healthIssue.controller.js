@@ -2,7 +2,7 @@ const path = require('path');
 const express = require('express');
 const Issues = require('../models/healthIssue');
 const Router = express.Router();
-
+const User = require('../models/userHealth')
 
 //Insert
 

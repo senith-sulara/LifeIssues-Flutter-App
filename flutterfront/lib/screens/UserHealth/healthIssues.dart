@@ -6,7 +6,7 @@ import 'package:flutterfront/services/api_service.dart';
 class HealthIssue extends StatefulWidget {
   HealthIssue({Key? key}) : super(key: key);
 
-  final HealthIssuesService healthIssuesService = HealthIssuesService();
+  final HealthIssuesByService healthIssuesService = HealthIssuesByService();
 
   @override
   _HealthIssuePageState createState() => _HealthIssuePageState();
