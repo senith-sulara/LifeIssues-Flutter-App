@@ -401,7 +401,7 @@ class _ParentState extends State<Health> {
                 "ageRange": _ageRangeController,
                 "gender": _genderController,
                 "workoutRange": _workoutRangeController,
-                "waterInakeRange": _waterIntakeController,
+                "waterIntakeRange": _waterIntakeController,
               };
               print(data);
               var result = healthInsert.post("/healthDetails/insert", data);
