@@ -42,7 +42,7 @@ class _ParentState extends State<Health> {
       Scaffold(
         // drawer: NevigationDrawer(),
         appBar: PreferredSize(
-          preferredSize: const Size.fromHeight(80),
+          preferredSize: const Size.fromHeight(60),
           child: AppBar(
             centerTitle: true,
             backgroundColor: const Color.fromARGB(255, 135, 63, 243),
@@ -60,10 +60,10 @@ class _ParentState extends State<Health> {
         ),
         body: Container(
           decoration: const BoxDecoration(
-            color: Color.fromARGB(255, 207, 54, 54),
-            image: DecorationImage(
-                image: AssetImage('assets/images/familyback.jpg'),
-                fit: BoxFit.cover),
+            color: Color.fromARGB(255, 255, 255, 255),
+            // image: DecorationImage(
+            //     image: AssetImage('assets/images/familyback.jpg'),
+            //     fit: BoxFit.cover),
           ),
           child: Stack(
             children: [

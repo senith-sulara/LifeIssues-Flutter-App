@@ -67,7 +67,7 @@ Router.get('/getIssuesaby', async (req, res) => {
                 (a, b) => b.createdAt - a.createdAt
             );
             res.send(sortedByCreationDate);
-        }else if (userData.ageRange == '30-40' && userData.waterIntakeRange == '0.5L-1L' && userData.gender == 'Male' && userData.workoutRange == '0-1Hrs') {
+        }else if (userData.ageRange == '30-40' && userData.waterIntakeRange == '0.5L-1L' && (userData.gender == 'Male' || userData.gender == 'Female' ) && userData.workoutRange == '0-1Hrs') {
             const files = await Issues.find({ ageRange: '30-40', gender: 'Male', waterIntakeRange: '0.5L-1L', workoutRange: '0-1Hrs' });
             const sortedByCreationDate = files.sort(
                 (a, b) => b.createdAt - a.createdAt
@@ -79,7 +79,7 @@ Router.get('/getIssuesaby', async (req, res) => {
                 (a, b) => b.createdAt - a.createdAt
             );
             res.send(sortedByCreationDate);
-        }else if (userData.ageRange == '40-60' && userData.waterIntakeRange == '0.5L-1L' && userData.gender == 'Male' && userData.workoutRange == '3-5Hrs') {
+        }else if (userData.ageRange == '40-60' && userData.waterIntakeRange == '0.5L-1L' && (userData.gender == 'Male' || userData.gender == 'Female' ) && userData.workoutRange == '3-5Hrs') {
             const files = await Issues.find({ ageRange: '40-60', gender: 'Male', waterIntakeRange: '0.5L-1L', workoutRange: '3-5Hrs' });
             const sortedByCreationDate = files.sort(
                 (a, b) => b.createdAt - a.createdAt

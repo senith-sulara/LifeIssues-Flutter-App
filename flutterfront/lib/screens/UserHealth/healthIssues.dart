@@ -35,7 +35,7 @@ class _HealthIssuePageState extends State<HealthIssue> {
       child: Scaffold(
         // drawer: NevigationDrawer(),
         appBar: PreferredSize(
-          preferredSize: const Size.fromHeight(80),
+          preferredSize: const Size.fromHeight(70),
           child: AppBar(
             centerTitle: true,
             backgroundColor: const Color.fromARGB(255, 135, 63, 243),
@@ -53,16 +53,16 @@ class _HealthIssuePageState extends State<HealthIssue> {
         ),
         body: Container(
           decoration: const BoxDecoration(
-            color: Color.fromARGB(255, 207, 54, 54),
-            image: DecorationImage(
-                image: AssetImage('assets/images/issueback.jpg'),
-                fit: BoxFit.cover),
+            color: Color.fromARGB(255, 255, 255, 255),
+            // image: DecorationImage(
+            //     image: AssetImage('assets/images/issueback.jpg'),
+            //     fit: BoxFit.cover),
           ),
           child: Stack(
             children: [
-              Positioned(
-                  top: 470,
-                  left: 0,
+              Center(
+                  // top: 470,
+                  // left: 0,
                   child: Container(
                     width: 420,
                     height: 220,

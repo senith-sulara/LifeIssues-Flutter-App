@@ -19,7 +19,7 @@ class Home extends StatelessWidget {
           Scaffold(
             drawer: NevigationDrawer(),
             appBar: PreferredSize(
-              preferredSize: const Size.fromHeight(80),
+              preferredSize: const Size.fromHeight(50),
               child: AppBar(
                 centerTitle: true,
                 backgroundColor: const Color.fromARGB(255, 135, 63, 243),
@@ -28,7 +28,7 @@ class Home extends StatelessWidget {
                   child: Text(
                     "Home",
                     style: TextStyle(
-                        fontSize: 24.0,
+                        fontSize: 20.0,
                         color: Color.fromARGB(215, 255, 255, 255)),
                   ),
                 ),
@@ -38,7 +38,7 @@ class Home extends StatelessWidget {
             ),
             body: Container(
               decoration: const BoxDecoration(
-                color: Color.fromARGB(255, 207, 54, 54),
+                //color: Color.fromARGB(255, 207, 54, 54),
                 image: DecorationImage(
                     image: AssetImage('assets/images/background2.jpg'),
                     fit: BoxFit.cover),
@@ -53,7 +53,7 @@ class Home extends StatelessWidget {
                         child: Row(
                           children: [
                             Material(
-                              color: const Color.fromARGB(255, 119, 1, 148),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               elevation: 8,
                               borderRadius: BorderRadius.circular(30),
                               clipBehavior: Clip.antiAliasWithSaveLayer,
@@ -61,14 +61,13 @@ class Home extends StatelessWidget {
                                 splashColor: Colors.black45,
                                 onTap: () => Navigator.of(context).push(
                                     CustomPageRoute(
-                                        child: Familys(),
+                                        child: const Familys(),
                                         direction: AxisDirection.right)),
                                 child: Container(
                                   decoration: BoxDecoration(
                                     color: Colors.transparent,
                                     border: Border.all(
-                                        color: const Color.fromARGB(
-                                            255, 119, 1, 148),
+                                        color: Color.fromARGB(255, 255, 255, 255),
                                         width: 3),
                                     borderRadius: BorderRadius.circular(30),
                                   ),
@@ -76,7 +75,7 @@ class Home extends StatelessWidget {
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Ink.image(
-                                        image: AssetImage(
+                                        image: const AssetImage(
                                             'assets/images/familyButton.jpg'),
                                         height: 130,
                                         width: 150,
@@ -86,7 +85,7 @@ class Home extends StatelessWidget {
                                       const Text(
                                         'Family',
                                         style: TextStyle(
-                                            fontSize: 22, color: Colors.white),
+                                            fontSize: 22, color: Color.fromARGB(255, 119, 1, 148)),
                                       )
                                     ],
                                   ),
@@ -96,7 +95,7 @@ class Home extends StatelessWidget {
                             Padding(
                               padding: const EdgeInsets.only(left: 30.0),
                               child: Material(
-                                color: const Color.fromARGB(255, 119, 1, 148),
+                                color: Color.fromARGB(255, 255, 255, 255),
                                 elevation: 8,
                                 borderRadius: BorderRadius.circular(30),
                                 clipBehavior: Clip.antiAliasWithSaveLayer,
@@ -110,8 +109,7 @@ class Home extends StatelessWidget {
                                     decoration: BoxDecoration(
                                       color: Colors.transparent,
                                       border: Border.all(
-                                          color: const Color.fromARGB(
-                                              255, 119, 1, 148),
+                                          color: Color.fromARGB(255, 255, 255, 255),
                                           width: 3),
                                       borderRadius: BorderRadius.circular(30),
                                     ),
@@ -130,7 +128,7 @@ class Home extends StatelessWidget {
                                           'Social',
                                           style: TextStyle(
                                               fontSize: 22,
-                                              color: Colors.white),
+                                              color: Color.fromARGB(255, 119, 1, 148)),
                                         )
                                       ],
                                     ),
@@ -146,7 +144,7 @@ class Home extends StatelessWidget {
                         child: Row(
                           children: [
                             Material(
-                              color: const Color.fromARGB(255, 119, 1, 148),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               elevation: 8,
                               borderRadius: BorderRadius.circular(30),
                               clipBehavior: Clip.antiAliasWithSaveLayer,
@@ -154,14 +152,13 @@ class Home extends StatelessWidget {
                                 splashColor: Colors.black45,
                                 onTap: () => Navigator.of(context).push(
                                     CustomPageRoute(
-                                        child: Health(),
+                                        child: const Health(),
                                         direction: AxisDirection.right)),
                                 child: Container(
                                   decoration: BoxDecoration(
                                     color: Colors.transparent,
                                     border: Border.all(
-                                        color: const Color.fromARGB(
-                                            255, 119, 1, 148),
+                                        color: Color.fromARGB(255, 255, 255, 255),
                                         width: 3),
                                     borderRadius: BorderRadius.circular(30),
                                   ),
@@ -169,7 +166,7 @@ class Home extends StatelessWidget {
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Ink.image(
-                                        image: AssetImage(
+                                        image: const AssetImage(
                                             'assets/images/healthbtn.jpg'),
                                         height: 130,
                                         width: 150,
@@ -179,7 +176,7 @@ class Home extends StatelessWidget {
                                       const Text(
                                         'Health',
                                         style: TextStyle(
-                                            fontSize: 22, color: Colors.white),
+                                            fontSize: 22, color: Color.fromARGB(255, 119, 1, 148)),
                                       )
                                     ],
                                   ),
@@ -189,7 +186,7 @@ class Home extends StatelessWidget {
                             Padding(
                               padding: const EdgeInsets.only(left: 30.0),
                               child: Material(
-                                color: const Color.fromARGB(255, 119, 1, 148),
+                                color: Color.fromARGB(255, 255, 255, 255),
                                 elevation: 8,
                                 borderRadius: BorderRadius.circular(30),
                                 clipBehavior: Clip.antiAliasWithSaveLayer,
@@ -203,8 +200,7 @@ class Home extends StatelessWidget {
                                     decoration: BoxDecoration(
                                       color: Colors.transparent,
                                       border: Border.all(
-                                          color: const Color.fromARGB(
-                                              255, 119, 1, 148),
+                                          color: Color.fromARGB(255, 255, 255, 255),
                                           width: 3),
                                       borderRadius: BorderRadius.circular(30),
                                     ),
@@ -212,7 +208,7 @@ class Home extends StatelessWidget {
                                       mainAxisSize: MainAxisSize.min,
                                       children: [
                                         Ink.image(
-                                          image: AssetImage(
+                                          image: const AssetImage(
                                               'assets/images/financialbtn.jpg'),
                                           height: 130,
                                           width: 150,
@@ -223,7 +219,7 @@ class Home extends StatelessWidget {
                                           'Financial',
                                           style: TextStyle(
                                               fontSize: 22,
-                                              color: Colors.white),
+                                              color: Color.fromARGB(255, 119, 1, 148)),
                                         )
                                       ],
                                     ),
